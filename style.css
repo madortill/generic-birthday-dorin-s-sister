@@ -1,0 +1,324 @@
+@font-face {
+  font-family: nehama;
+  src: url(assets/fonts/nehama-webfont.ttf), url(assets/fonts/nehama-webfont.eot);
+}
+
+html,
+body,
+#black-opacity {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  direction: ltr;
+}
+
+#preload {
+  position: absolute;
+  /* visibility: hidden; */
+  display:none;
+  z-index: -999;
+}
+
+#opening-ending-container {
+  position: absolute;
+  z-index: 16;
+  height: 100%;
+  width: 100%;
+}
+
+#scientist {
+  position: relative;
+  margin: auto;
+  height: 67vw;
+  display: block;
+  margin-top: 10vw;
+  margin-bottom: 3vw;
+  top: -77vw;
+  z-index: 21;
+}
+
+#speech-bubble {
+  background-image: url("assets/media/general/SpeechBubble.svg");
+  background-repeat: no-repeat;
+  height: 67vw;
+  width: 73%;
+  position: relative;
+  margin: auto;
+  font-family: nehama, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 7.5vw;
+  text-align: center;
+  direction: rtl;
+  padding: 4vw;
+  padding-top: 15vw;
+  opacity: 0;
+}
+
+#play-button {
+  width: 15%;
+  position: relative;
+  display: block;
+  top: -17vw;
+  left: 8vw;
+  opacity: 0;
+}
+
+#about {
+  width: 13%;
+  position: fixed;
+  display: block;
+  bottom: 0vw;
+  left: 75vw;
+  opacity: 0;
+}
+
+#about-title,
+#about-content {
+  margin-right: 14vw;
+  margin-left: 2vw;
+  direction: rtl;
+  font-family: nehama, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#about-title {
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+  font-size: 11vw;
+}
+
+#about-content {
+  font-size: 7vw;
+}
+
+#school-symbol {
+  margin-right: 49vw;
+  margin-top: -25vw;
+  width: 35vw;
+}
+
+#till-symbol {
+  margin-top: 4vw;
+  width: 25vw;
+  margin-right: 22vw;
+}
+
+#black-opacity {
+  background-color: rgba(0, 0, 0, 0.644);
+  position: absolute;
+  z-index: 15;
+}
+
+/* game */
+
+#game-container {
+  background-color: rgba(113, 167, 188);
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#names-flexbox,
+#acts-flexbox {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#names-flexbox {
+  overflow-x: scroll;
+  position: relative;
+  z-index: 1;
+  height: 80%;
+}
+
+.leaders {
+  width: 26vw;
+  height: 16vh;
+}
+
+#shelf-container {
+  height: 22vh;
+  width: 100%;
+  z-index: 12;
+  position: relative;
+}
+
+#shelf {
+  width: 100%;
+  position: relative;
+  bottom: 5.5vw;
+  z-index: 0;
+}
+
+#potion-container {
+  width: 100%;
+  height: 20vh;
+  z-index: 1;
+}
+
+#vial-container {
+  height: 36vh;
+  top: -16vw;
+  position: relative;
+  left: -17vw;
+  display: flex;
+  justify-content: space-around;
+  z-index: -4;
+}
+
+.vial {
+  height: 36vh;
+  top: 27vw;
+  position: fixed;
+  left: -8vw;
+  z-index: -5;
+}
+
+.none {
+  display: none;
+}
+
+.explosion {
+  height: 46vh;
+  position: relative;
+  top: -10vw;
+  left: 17vw;
+  z-index: -3;
+  opacity: 10;
+  display: none;
+}
+
+#explosion1 {
+  visibility: hidden;
+  display: block;
+}
+
+#notebook-button {
+  width: 30%;
+  align-self: flex-end;
+  top: -9.3vw;
+  left: -4vw;
+  position: relative;
+}
+
+#desk {
+  width: 100%;
+  position: relative;
+}
+
+#drawer-container {
+  height: 48vh;
+  background-color: rgb(158, 158, 158);
+}
+
+#acts-flexbox {
+  height: 100%;
+  overflow-y: scroll;
+  flex-direction: column;
+  top: -15.7vw;
+  background-color: rgb(158, 158, 158);
+}
+
+.acts {
+  width: 100%;
+  height: 28.1vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-image: url(assets/media/general/cabinet_right.svg);
+  font-family: nehama, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.right-dirction {
+  flex-direction: row-reverse;
+  background-image: url(assets/media/general/cabinet_left.svg);
+}
+
+.act-text {
+  width: 71%;
+  position: relative;
+  direction: rtl;
+  text-align: right;
+  height: 33.3vw;
+  display: flex;
+  align-items: center;
+  margin-right: 4vw;
+  margin-left: 2vw;
+  font-size: 5.6vw;
+  top: -2vw;
+}
+
+.components {
+  width: 26%;
+  position: relative;
+  margin-left: -1vw;
+  margin-right: -2vw;
+  top: 8vw;
+}
+
+/* ending */
+
+#notebook-container {
+  width: 100%;
+  z-index: 17;
+  bottom: 2vw;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#back-button {
+  position: relative;
+  width: 20%;
+  margin: 3vw;
+  margin-right: 14vw;
+}
+
+#notebook {
+  background-image: url(assets/media/general/notebook.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 129vw;
+  position: relative;
+}
+
+#notebook-scrollbar {
+  width: 100%;
+  height: 92%;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.marked-name,
+.marked-text {
+  margin: 2vw;
+  margin-right: 14vw;
+  direction: rtl;
+  font-family: nehama, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 5.6vw;
+}
+
+.marked-name {
+  margin-top: 7vw;
+  width: 27%;
+  background-repeat: no-repeat;
+}
+
+#great-job-span {
+  font-size: 12vw
+}
+
+#notebook-button-ending {
+  position: fixed;
+  height: 17vw;
+  bottom: 6vw;
+  right: 8vw;
+  opacity: 0;
+}
