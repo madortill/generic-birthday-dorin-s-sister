@@ -1,0 +1,22 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "es5"
+        ],
+        "target": "es2015",
+    },
+    "files": [
+        "assets/JQuery/JQuery.d.ts",
+        "assets/JQuery/JQueryStatic.d.ts",
+        "assets/JQuery/misc.d.ts", 
+        "assets/JQuery-ui/index.d.ts"
+    ], "include": [
+        "**/*.js"
+    ],
+    "exclude": [
+        "sw.js"
+    ]
+}
