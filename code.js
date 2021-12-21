@@ -87,7 +87,7 @@ function init() {
   for (let i = 0; i < NUM_OF_LEADERS; i++) {
     // names
     // the graphics is the background of the div
-    $("#names-flexbox").append(`<img id="leader-${i+1}" data-num=${i+1} class="leaders" src="assets/media/leader-answer/leader_${i+1}.png">`);
+    $("#names-flexbox").append(`<img id="leader-${i+1}" data-num=${i+1} class="leaders" src="assets/media/leader-answer/leader_${i+1}.svg">`);
     // $(`#name-${i+1}`).attr("src", `assets/media/leaders/leader_${i+1}.svg`);
     // acts
     // adding internal text div to the HTML div
@@ -232,7 +232,7 @@ function selected(clickedItem, imgName, itemType) {
   if (itemType === "component") {
   $("#" + itemType + "-" + window[`selected${itemType}`]).attr("src", "assets/media/" + imgName + "-answer/" + imgName + "_" + window[`selected${itemType}`] + ".svg");
   } else {
-    $("#" + itemType + "-" + window[`selected${itemType}`]).attr("src", "assets/media/" + imgName + "-answer/" + imgName + "_" + window[`selected${itemType}`] + ".png");
+    $("#" + itemType + "-" + window[`selected${itemType}`]).attr("src", "assets/media/" + imgName + "-answer/" + imgName + "_" + window[`selected${itemType}`] + ".svg");
   }
   // if the last item is not the current item
   if (window[`selected${itemType}`] !== clickedItem.attr("data-num")) {
@@ -242,7 +242,7 @@ function selected(clickedItem, imgName, itemType) {
     if (itemType === "component") {
       clickedItem.attr("src", "assets/media/" + imgName + "-answer/" + imgName + "_selected_" + window[`selected${itemType}`] + ".svg");
     } else {
-      clickedItem.attr("src", "assets/media/" + imgName + "-answer/" + imgName + "_selected_" + window[`selected${itemType}`] + ".png");
+      clickedItem.attr("src", "assets/media/" + imgName + "-answer/" + imgName + "_selected_" + window[`selected${itemType}`] + ".svg");
     }
     // if the vial is empty, it is switched to new picture with the new item
     if ($("#vial").hasClass("block")) {
@@ -271,7 +271,7 @@ function selected(clickedItem, imgName, itemType) {
     if (itemType === "component") {
       clickedItem.attr("src", "assets/media/" + imgName + "-answer/" + imgName + "_" + window[`selected${itemType}`] + ".svg");
     } else {
-      clickedItem.attr("src", "assets/media/" + imgName + "-answer/" + imgName + "_" + window[`selected${itemType}`] + ".png");
+      clickedItem.attr("src", "assets/media/" + imgName + "-answer/" + imgName + "_" + window[`selected${itemType}`] + ".svg");
     }  
     window[`selected${itemType}`] = null;
     $("#vial").addClass("block");
@@ -391,7 +391,7 @@ function reaction(reactionKind) {
     } else {
       // removing item's glow
       $("#component-" + selectedcomponent).attr("src", "assets/media/info-answer/info_" + selectedcomponent + ".svg");
-      $("#leader-" + selectedleader).attr("src", "assets/media/leader-answer/leader_" + selectedleader + ".png");
+      $("#leader-" + selectedleader).attr("src", "assets/media/leader-answer/leader_" + selectedleader + ".svg");
     }
 
     selectedcomponent = null;
